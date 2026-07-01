@@ -1,0 +1,228 @@
+/* ============================================
+   KAYS Media Creatives v2.0
+   Responsive Stylesheet
+   ============================================ */
+
+@media (max-width: 1024px) {
+  .portfolio-grid--full {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .portfolio-item--large {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+  
+  .portfolio-item--wide {
+    grid-column: span 2;
+  }
+  
+  .mv-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .process-step:nth-child(2)::after {
+    display: none;
+  }
+  
+  .process-step:nth-child(1)::after,
+  .process-step:nth-child(3)::after {
+    right: -16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  
+  .mobile-menu-btn {
+    display: flex;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .hero-cta {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .btn {
+    width: 100%;
+    max-width: 280px;
+  }
+  
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .portfolio-grid,
+  .portfolio-grid--full {
+    grid-template-columns: 1fr;
+  }
+  
+  .portfolio-item--large,
+  .portfolio-item--wide {
+    grid-column: span 1;
+    grid-row: span 1;
+    aspect-ratio: 4/3;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  
+  .stat-number {
+    font-size: 2.25rem;
+  }
+  
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+  
+  .about-image-accent {
+    display: none;
+  }
+  
+  .mv-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .process-step::after {
+    display: none !important;
+  }
+  
+  .services-detail-features {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+  
+  .contact-form-wrapper {
+    padding: 32px 24px;
+  }
+  
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  
+  .footer-brand {
+    grid-column: span 2;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .back-to-top {
+    right: 28px;
+    bottom: 96px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --container-padding: 5%;
+  }
+  
+  .hero {
+    padding: 100px var(--container-padding) 60px;
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+  }
+  
+  .section-header {
+    margin-bottom: 40px;
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .footer-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  
+  .footer-brand {
+    grid-column: span 1;
+  }
+  
+  .footer-desc {
+    max-width: none;
+  }
+  
+  .social-links {
+    justify-content: center;
+  }
+  
+  .footer-nav a,
+  .footer-contact a {
+    justify-content: center;
+  }
+  
+  .mobile-nav {
+    width: 85%;
+    padding: 80px 28px 32px;
+  }
+  
+  .service-detail-card {
+    padding: 32px 24px;
+  }
+  
+  .contact-method {
+    padding: 14px;
+  }
+  
+  .faq-question {
+    padding: 20px 20px;
+    font-size: 0.95rem;
+  }
+  
+  .faq-answer {
+    padding: 0 20px 20px;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  html {
+    scroll-behavior: auto;
+  }
+  
+  .hero-circle {
+    animation: none;
+  }
+}

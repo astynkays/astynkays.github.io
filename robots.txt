@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kaysmedia.github.io/sitemap.xml
