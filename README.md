@@ -4,6 +4,6 @@ A professional, production-ready website for KAYS Media Creatives, a modern crea
 
 ## 🌐 Live Site
 
-[https://kaysmedia.github.io](https://kaysmedia.github.io)
+[https://astynkays.github.io](https://astynkays.github.io)
 
 ## 📁 Structure
